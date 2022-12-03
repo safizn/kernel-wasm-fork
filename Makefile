@@ -9,4 +9,4 @@ install:
 
 clean:
 	$(MAKE) -C $(HDR_PATH)/build M=$(PWD) clean
-	rm $(shell find ${HDR_PATH} -name "*wasm*")
+	rm -f $(shell find ${HDR_PATH} -name "*wasm*")
